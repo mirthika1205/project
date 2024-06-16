@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:rgb(162, 224, 224);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+        .image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .image:hover img {
+            transform: scale(1.1);
+        }
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .image:hover .caption {
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hi ! I'm Mirthika</h1>
+    <div class="gallery">
+        <div class="image">
+            <img src="1.jpg" alt="Image 1">
+            <div class="caption">Laugh often</div>
+        </div>
+        <div class="image">
+            <img src="2.jpg" alt="Image 2">
+            <div class="caption">Check the glow</div>
+        </div>
+        <div class="image">
+            <img src="3.jpg" alt="Image 3">
+            <div class="caption">just the way</div>
+        </div>
+        <!-- Add more images and captions as needed -->
+    </div>
+</div>
+<p><br><center>
+    <h1>Hello, I'm [Mirthika.s]</h1>
+
+I'm a passionate web designer with a keen eye for aesthetics and a love for crafting intuitive and visually appealing digital experiences. 
+
+<h2>Design Philosophy</h2>
+
+My design philosophy revolves around the principle of marrying form with function.<br>
+ I believe that a great design not only looks beautiful but also enhances usability<br>
+  and effectively communicates the brand's message<br>
+ I strive to create designs that not only catch the eye but also engage and delight<br> 
+ the user, ultimately driving conversions and achieving <br>
+ business objectives.<br><br><br><br><br>
+
+
+Thank you for considering me for your design needs. I look forward to the opportunity to work with you!
+
+
+
+</center>
+</p>
+</body>
+</html>
